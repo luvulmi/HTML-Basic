@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2</title>
+
+    <style>
+        .attr1 {
+            width: 100px;
+        }
+
+        .attr2 {
+            width: 50px;
+        }
+
+        .attr3 {
+            width: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>네이버 로고, 검색 창</h1>
+
+        <nav>
+            <h2>메일, 카페, 블로그, 지식인 (바로가기 메뉴)</h2>
+        </nav>
+
+    </header>
+
+    <main>
+        <section>
+            <h3>헤드라인 뉴스</h3>
+        </section>
+
+        <section>
+            <h3>주제별 토론</h3>
+        </section>
+
+        <aside>
+            <h3>로그인, 광고, 쇼핑</h3>
+        </aside>
+
+        <article>
+            <h3>카페, 블로그</h3>
+        </article>
+    </main>
+
+    <footer>
+        <h4>네이버 상호, 약관, 고객센터</h4>
+    </footer>
+
+    <!-- ol>li*3 + tab키 
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+    -->
+
+    <ol type="i" start="1">
+        <li>HTML 문자 생성</li>
+        <li>HTML 기본 구조</li>
+        <li>HTML 태그</li>
+    </ol>
+    <hr>
+
+    <ol type="a" start="2">
+        <li>HTML 기본 구조</li>
+        <li>HTML 태그</li>
+    </ol>
+    <hr>
+
+    <ul>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>Javascript
+            <ul>
+                <li>VSCODE 자바스크립트 실행환경</li>
+                <li>기본 출력 및 실행 테스트</li>
+                <li>자료형과 변수</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+    </dl>
+
+    <table border="1">
+        <tr>
+            <th>학번</th>
+            <th>성명</th>
+        </tr>
+
+        <tr>
+            <th>1</th>
+            <td>김유림</td>
+        </tr>
+
+        <tr>
+            <th>2</th>
+            <td>김유림</td>
+        </tr>
+
+        <tr>
+            <th>3</th>
+            <td>김유림</td>
+        </tr>
+    </table><br>
+
+    <!-- table>(tr>td*4)*5 + tab키 -->
+
+    <figure>
+        <figcaption>테이블 구조</figcaption>
+
+        <table border="1">
+            <colgroup>
+                <col class="attr1">
+                <col class="attr2">
+                <col class="attr3">
+                <col class="attr1">
+            </colgroup>
+
+            <thead>
+                <tr>
+                    <th>구분</th>
+                    <th scope="col">항목1</th>
+                    <th scope="col">항목2</th>
+                    <th scope="col">항목3</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">a</th>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <th scope="row" rowspan="3">b</th>
+                    <td>4</td>
+                    <td colspan="2">5</td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+
+                <tr>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th scope="row">총계</th>
+                    <td>22</td>
+                    <td>26</td>
+                    <td>30</td>
+                </tr>
+            </tfoot>
+        </table>
+    </figure>
+
+
+    <!-- 
+        div{$}*100 1~100까지
+        div{$@10}*100 10~109까지
+        div{$@-10}*100 199~10까지
+    -->
+
+
+    <!-- 
+        f1 > lorem multiple 적힌거 클릭 > 원하는 줄 수 클릭
+        <html lang="zxx"> 라고 적으면 유효성 검사 통과! 
+        <a href="#id이름명">
+        id > 태그에 하나만 지정 가능 > #클릭하면 이동
+    -->
+
+    <h1>FOOD.COM</h1>
+
+    <ul>
+        <li><a href="#koreanFood">한식</a>
+            <ul>
+                <li>백반</li>
+                <li>한정식</li>
+                <li>불고기정식</li>
+                <li>김치찌개</li>
+            </ul>
+        </li>
+
+        <li><a href="#chineseFood">중식</a>
+            <ul>
+                <li>짜장면</li>
+                <li>짬뽕</li>
+                <li>탕수육</li>
+                <li>팔보채</li>
+                <li>깐풍기</li>
+            </ul>
+        </li>
+
+        <li><a href="#westernFood">양식</a>
+            <ul>
+                <li>돈까스</li>
+                <li>함박스테이크</li>
+                <li>로스스테이크</li>
+                <li>봉골레스파게티</li>
+                <li>토마토스파게티</li>
+                <li>
+                    <a href="./hamburger/hamburger.html" target="_blank">
+                        <img src="../image/ham.jpg" alt="햄버거 이미지"></a>
+                    <ul>
+                        <li>
+                            <a href="./hamburger/bulgogi/bulgogi_burger.html">불고기버거</a>
+                        </li>
+                        <li>치즈버거</li>
+                        <li>치킨버거</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#flourBaseFood">분식</a>
+            <ul>
+                <li>떡볶이</li>
+                <li>김밥</li>
+                <li>튀김</li>
+                <li>순대</li>
+            </ul>
+        </li>
+
+        <li><a href="#lateNightFood">야식</a>
+            <ul>
+                <li>족발</li>
+                <li>부대찌개</li>
+                <li>비빔국수</li>
+                <li>쫄면</li>
+                <li>군만두</li>
+            </ul>
+        </li>
+
+        <li>고객센터
+            <ul>
+                <li>이메일 :
+                    <a href="mailto:kingfood@food.com" title="스팸성 메일은 차단됩니다.">kingfood@food.com</a>
+                </li>
+                <li>연락처 : 1588 - 1234</li>
+            </ul>
+        </li>
+
+        <li>제휴사이트
+            <ul>
+                <li><a href="http://www.naver.com">네이버</a></li>
+                <li><a href="http://www.daum.com">다음</a></li>
+            </ul>
+        </li>
+
+        <!-- 이미지 맵 링크 걸기 
+        https://www.image-map.net -->
+        <li><a href="./chain_location/chain_map.html">체인점</a></li>
+    </ul>
+
+    <hr>
+
+    <h2 id="koreanFood">한식 소개</h2>
+    <a href="#">Home</a>
+    <p>
+        Amet sunt consectetur incididunt ex esse excepteur mollit. Velit sint commodo aliquip magna sit eiusmod sit
+        quidolore labore aute nostrud. Culpa anim amet ea id non nostrud dolor fugiat reprehenderit culpa veniam anim.
+        Adipisicing fugiat amet pariatur qui veniam. Cupidatat exercitation exercitation quis veniam sit aliquip.
+        Sitenim nostrud cupidatat proident id excepteur dolor irure minim culpa excepteur officia. Reprehenderit
+        commodo exercitation commodo qui laboris occaecat enim anim pariatur minim ipsum magna.Consectetur magna
+        pariatur
+        consectetur dolor nostrud velit nostrud irure. Do dolor labore sunt anim cillum elifugiat consequat minim labore
+        laborum. Anim reprehenderit irure voluptate laboris eiusmod Lorem adipisicing.
+        Nisi minim duis id ex veniam aliquip nisi aliquip enim labore nostrud. Fugiat labore cupidatat minim culpa
+        aliquip ut cupidatat eiusmod aliquip deserunt veniam esse. Aute nulla non occaecat sit quis.
+    </p>
+    <hr>
+
+    <h2 id="chineseFood">중식 소개</h2>
+    <a href="#">Home</a>
+    <p>
+        Sunt amet consequat occaecat proident mollit culpa ex nostrud adipisicing exercitation tempor in veniam
+        ipsum.Id duis enim id qui quis ipsum culpa adipisicing elit reprehenderit do officia elit. Excepteur deserunt
+        nullaofficia tempor velit aute do in incididunt. Consequat minim commodo laborum duis labore amet laboris Lorem
+        quiveniam culpa esse. Laborum sint excepteur qui ad deserunt proident. Commodo qui irure est adipisicing
+        consectetur in do animproident consequat adipisicing non. Eu minim anim qui amet qui reprehenderit excepteur
+        irure incididunt
+        dolorevoluptate culpa cillum elit. Mollit labore et esse officia irure. Mollit fugiat anim enim ex esse ipsum
+        reprehenderit voluptate eu excepteur nostrud. Esse sint anim veniam quis voluptate nostrud reprehenderit qui
+        sint.
+    </p>
+    <hr>
+
+    <h2 id="westernFood">양식 소개</h2>
+    <a href="#">Home</a>
+    <p>
+        Consectetur magna pariatur consectetur dolor nostrud velit nostrud irure. Do dolor labore sunt anim cillum
+        elitfugiat consequat minim labore laborum. Anim reprehenderit irure voluptate laboris eiusmod Lorem adipisicing.
+        Nisi minim duis id ex veniam aliquip nisi aliquip enim labore nostrud. Fugiat labore cupidatat minim culpa
+        aliquip ut cupidatat eiusmod aliquip deserunt veniam esse. Aute nulla non occaecat sit quis.Deserunt aute velit
+        aliqua in exercitation sit sint officia minim pariatur. Quis consequat consequat
+        cupidatatlabore voluptate mollit cillum. Quis occaecat exercitation est culpa amet do cillum nisi ullamco sunt.
+        Ipsum
+        pariatur minim proident cillum aliquip nostrud. Consectetur voluptate do veniam commodo non. Cillum ullamco
+        qui occaecat.
+    </p>
+    <hr>
+
+    <h2 id="flourBaseFood">분식 소개</h2>
+    <a href="#">Home</a>
+    <p>
+        Labore reprehenderit commodo exercitation id culpa fugiat non ipsum id eiusmod. Nostrud sit aliquip minim
+        ametnulla ut minim ipsum aute consequat eiusmod. Dolor cillum nulla aute culpa cillum irure commodo id do. Ad
+        consectetur est exercitation tempor laboris aliqua sunt. Non sunt ut nulla pariatur incididunt esse. Ullamco
+        exercitation laborum excepteur do quis in esse nostrud id exercitation aliqua id et non. Id sint minim
+        cillumconsequat nulla proident consequat magna eu velit sit.
+    </p>
+    <hr>
+
+    <h2 id="lateNightFood">야식 소개</h2>
+    <a href="#">Home</a>
+    <p>
+        Non culpa ipsum labore fugiat. Deserunt sunt veniam ex proident magna dolore dolore. Culpa et sint voluptate
+        occaecat sunt ipsum do magna nisi. Quis culpa culpa dolor reprehenderit aliqua culpa id fugiat nostrud amet.
+        Mollit nisi qui consequat minim ipsum ipsum laborum est.Magna fugiat eiusmod magna labore incididunt cillum
+        dolore ex. Et aute deserunt ut ea proident ipsum et tempor nostrud. Amet reprehenderit fugiat sint Lorem
+        incididunt occaecat veniam reprehenderit. Duis nisi nostrud fugiat eiusmod proident laborum nisi ut.
+    </p>
+    <hr>
+
+
+</body>
+
+</html>
