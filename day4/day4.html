@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day4</title>
+</head>
+
+<body>
+    <h1>멀티미디어</h1>
+    <h2>동영상 플레이1</h2>
+
+    <video src="wave.mp4" controls muted autoplay></video>
+    <hr>
+
+    <h2>동영상 플레이2</h2>
+    <video src="wave.mp4" controls muted autoplay>
+        해당 브라우저에서는 지원되지 않는 형식의 파일입니다.
+    </video>
+    <hr>
+
+    <h2>동영상 플레이3</h2>
+
+    <video muted autoplay>
+        <source src="wave.ogv" type="video/ogg">
+        <source src="wave.mp4" type="video/webM">
+        <source src="wave.mp4" type="video/mp4">
+        <p>
+            해당 브라우저에서는 지원되지 않는 형식의 파일입니다.
+        </p>
+    </video>
+    <hr>
+
+    <h2>동영상 플레이4</h2>
+
+    <video src="wave.mp4" controls muted autoplay poster="wave.jpg" preload="auto" loop>
+        <p>
+            해당 브라우저에서는 지원되지 않는 형식의 파일입니다.
+        </p>
+    </video>
+    <hr>
+
+</body>
+
+</html>
